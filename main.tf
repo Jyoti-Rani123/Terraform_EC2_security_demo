@@ -3,11 +3,11 @@ resource "aws_instance" "public" {
   instance_type               = "t2.micro"
   subnet_id                   = "subnet-0cc94b815da8f0c95"
   associate_public_ip_address = true
-  key_name                    = "jyoti_key_pair" #Change to your keyname 
+  key_name                    = "jyoti_key_pair" #Change to your kegityname 
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
  
   tags = {
-    Name = "jyoti-ec2-new"    #Change to your name
+    Name = "jyoti-ec2"    #Change to your name
   }
 }
 
