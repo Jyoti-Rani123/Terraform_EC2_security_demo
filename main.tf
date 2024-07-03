@@ -7,7 +7,7 @@ resource "aws_instance" "public" {
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
  
   tags = {
-    Name = "jyoti-ec2"    #Change to your name
+    Name = "jyoti-ec2-new"    #Change to your name
   }
 }
 
